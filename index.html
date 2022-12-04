@@ -4,46 +4,62 @@
                                         <!-- HAI726I Projet web: site de covoiturage  --> 
 <head>
     <title> HAI726I Projet web SHAIBI </title>
-    <link rel="shortcut icon" href="images/car-sharing.ico" />    
+    <link rel="shortcut icon" href="images/car-sharing.ico" />
+    <link href="css/index.css" rel="stylesheet">    
 </head>
 <body>
     <!---------------------------- Header --------------------------------------------------->
-    <fieldset>
-        <legend> Identification</legend>
-        Email: <input type="text" placeholder="votre@email.com"> 
-        Mot de Passe: <input type="text" placeholder="*********">  
-    </fieldset> <br>
-    <fieldset>
-        <legend> Rechercher un traget</legend>
-        <input class="favorite styled" type="button" value="Rechercher">
-    </fieldset>
+    <header id="main-header">
+        <div class="header-container">
+            <fieldset>
+                <legend> Identification</legend>
+                Email: <input type="text" placeholder="votre@email.com"> 
+                Mot de Passe: <input type="text" placeholder="*********">  
+            </fieldset>
+        </div>
+        <div class="header-container">
+            <fieldset>
+                <legend> Rechercher un traget</legend>
+                <input class="favorite styled" type="button" value="Rechercher">
+            </fieldset>
+        </div>
+    </header>
     <!--------------------------------------------------------------------------------------->
      
-    <img src="images/covoiturage.jpg" alt="home picture" width="1540" height="400"/>
+    <img src="images/covoiturage.jpg" alt="home picture" width="1540" height="340"/>
 
     <!-- Avantage -->
-    <h1>Vos trajets préférés à petits prix</h1>
+    <h2>Vos trajets préférés à petits prix</h2>
     <p>
-        Où que vous alliez, en bus ou en covoiturage, 
-        trouvez le trajet idéal parmi notre large choix 
-        de destinations à petits prix.
+        <p>Où que vous alliez, en covoiturage,</p> 
+        <p>trouvez le trajet idéal parmi notre large choix</p> 
+        <p>de destinations à petits prix.</p>
     </p>
 
     <!-- Propos -->    
-    <h1>Voyagez en toute confiance</h1>
+    <h2>Voyagez en toute confiance</h2>
     <p>
-        Nous prenons le temps qu’il faut pour connaître nos membres. 
-        Nous vérifions les avis, les profils et les pièces d’identité. Vous savez donc avec qui vous allez 
-        voyager pour réserver en toute confiance sur notre plateforme.
+        <p>Nous prenons le temps qu’il faut pour connaître nos membres. </p>
+        <p>Nous vérifions les avis, les profils et les pièces d’identité.</p> 
+        <p>Vous savez donc avec qui vous allez voyager pour réserver </p>
+        <p>en toute confiance sur notre plateforme.</p>
     </p>
 
     <!-- Comment Faire -->
-    <h1>Recherchez, cliquez et réservez !</h1>
+    <h2>Recherchez, cliquez et réservez !</h2>
     <p>
-        Réserver un trajet devient encore plus simple ! 
-        Facile d'utilisation et dotée de technologies avancées, 
-        notre appli vous permet de réserver un trajet à proximité en un rien de temps.
+        <p>Réserver un trajet devient encore plus simple !</p>  
+        <p>Facile d'utilisation et dotée de technologies avancées,</p> 
+        <p>notre appli vous permet de réserver un trajet à proximité en un rien de temps.</p>
     </p>
+    
+    <!---------------------------- Footer --------------------------------------------------->
+    <footer id="main-footer">
+        <div class="copyright-info">
+            <p> &copy; 2022 <strong>SHAIBI Youssef</strong> <strong> </strong>  </p>
+        </div>
 
+    </footer>
+    <!--------------------------------------------------------------------------------------->
 </body>
 </html>
