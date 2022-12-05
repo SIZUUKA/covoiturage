@@ -1,7 +1,12 @@
+:root {
+    --main-bg-color:  antiquewhite;
+  }
 /*---------------------------------- Tags -----------------------------------------------------*/
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
+    background-color: var(--main-bg-color);
+    width: 100vw;
+    height: 100vh;
 }
 
 h2{
