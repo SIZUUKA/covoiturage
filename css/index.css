@@ -1,4 +1,59 @@
 /*---------------------------------- Id's -----------------------------------------------------*/
+/* Header Logo */
+#logo { 
+    padding:0; 
+    width:auto; 
+    float:left;
+}
+#logo h1 a, h1 a:hover { 
+    color:rgb(135, 150, 35); 
+    text-decoration:none;
+}
+#logo h1 span { 
+    color:#347764;
+}
+
+#header, #footer, #main { 
+    margin:0; 
+    padding:0;
+}
+
+/* Header */
+#header { 
+    background:#fff; 
+}
+#header-contenu { 
+    margin:0 auto; 
+    padding:10; 
+    width:970px;
+}
+
+/* Menu */
+#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:red; text-decoration:none;}
+#top-nav ul li.active a, #top-nav ul li a:hover { color:#f8dbdb;} */
+
+.clr { 
+    clear:both; 
+    padding:0; 
+    margin:0; 
+    width:100%; 
+    font-size:0px; 
+    line-height:0px;
+}
+
+#main-footer { 
+    position: static;
+    text-align: center;
+    left: 230px;
+    bottom: 0;
+    width: 100%;
+    height: 50px; 
+    overflow: hidden; 
+    background: #908e6c;
+}
 /*---------------------------------------------------------------------------------------------*/
 
 /*---------------------------------- Classes --------------------------------------------------*/
@@ -11,7 +66,7 @@
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: rgb(162, 161, 92);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), 
     rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
@@ -19,7 +74,7 @@
             }
 
 .styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: rgb(255, 251, 0);
 }
 
 .styled:active {
