@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!------------------------------------------- SHAIBI Youssef,----------------------------->    
+<!------------------------------------------- SHAIBI_IZOUKA ------------------------------>    
 <!--------------------------- HAI726I Projet web: site de covoiturage --------------------> 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title> HAI726I Projet web SHAIBI </title>
+    <title> HAI726I Projet web SHAIBI_IZOUKA </title>
     <link rel="shortcut icon" href="images/car-sharing.ico" />
     <link href="css/main.css" rel="stylesheet">  
-    <link href="css/index.css" rel="stylesheet">    
+    <link href="css/index.css" rel="stylesheet">  
 </head>
 
 <body>
@@ -33,6 +33,9 @@
                     <li>
                         <a href="r_covoiturage.html">
                             <input class="favorite styled" type="button" value="Rechercher un traget">
+                        </a>
+                        <a href="p_covoiturage.html">
+                            <input class="favorite styled" type="button" value="Proposer un traget">
                         </a>
                     </li>
                 </ul>
@@ -85,7 +88,7 @@
     <!---------------------------- Footer --------------------------------------------------->
     <footer id="main-footer">
         <div class="copyright-info">
-            <p> &copy; 2022 <strong>SHAIBI Youssef</strong> <strong> </strong>  </p>
+            <p> &copy; 2022 <strong>SHAIBI_IZOUKA</strong> <strong> </strong>  </p>
         </div>
     </footer>
     <!--------------------------------------------------------------------------------------->
