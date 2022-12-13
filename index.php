@@ -1,3 +1,21 @@
+<?php
+
+$db_host = "localhost";
+$db_name = "projet_covoiturage";
+$db_user = "root";
+
+$link = mysqli_connect($db_host, $db_user, "", $db_name);
+
+if (mysqli_connect_error()) {
+    echo mysqli_connect_error();
+    exit;
+}
+
+// Print host information
+//echo "Connect Successfully. Host info: " . mysqli_get_host_info($link);
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <!------------------------------------------- SHAIBI_IZOUKA ------------------------------>    
@@ -15,7 +33,7 @@
     <header id="header">
         <div id="header-contenu">
             <div id="logo">
-                <h1><a href="index.html">Co<span>Voiturage</span></a></h1>
+                <h1><a href="index.php">Co<span>Voiturage</span></a></h1>
             </div>
 
             <div id="top-nav">
