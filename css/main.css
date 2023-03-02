@@ -22,13 +22,14 @@ table {
     border-collapse: collapse;
     border: 0px;
     letter-spacing: 1px;
-    font-size: .8rem;
+    font-size: .12rem;
 }
 
 td, th {
     padding: 5px;
     text-align: center;
 }
+
 
 
 /*---------------------------------------------------------------------------------------------*/

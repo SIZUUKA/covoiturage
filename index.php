@@ -1,19 +1,7 @@
 <?php
-
-$db_host = "localhost";
-$db_name = "projet_covoiturage";
-$db_user = "root";
-
-$link = mysqli_connect($db_host, $db_user, "", $db_name);
-
-if (mysqli_connect_error()) {
-    echo mysqli_connect_error();
-    exit;
-}
-
-// Print host information
-//echo "Connect Successfully. Host info: " . mysqli_get_host_info($link);
-
+require_once 'conexion.php'; 
+session_start(); 
+$bdd = new PDO('mysql:host=localhost;dbname=projet_covoiturage;charset=utf8;', 'root', ''); 
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +16,10 @@ if (mysqli_connect_error()) {
     <link href="css/index.css" rel="stylesheet">  
 </head>
 
+
+
 <body>
+   
     <!---------------------------- Header --------------------------------------------------->
     <header id="header">
         <div id="header-contenu">
@@ -36,29 +27,24 @@ if (mysqli_connect_error()) {
                 <h1><a href="index.php">Co<span>Voiturage</span></a></h1>
             </div>
 
+            <form method="post">
+
             <div id="top-nav">
                 <ul>
                     <li>
                         <fieldset>
                             <legend> <strong>Identification</strong></legend>
-                            <strong>email</strong> <input type="text" placeholder="votre@email.com"> 
-                            <strong>Mot de passe</strong><input type="text" placeholder="*********">
-                            <a href="Identification.html">
-                                <input class="favorite styled" type="button" value="Connexsion">
-                            </a>
+                            <strong>email</strong> <input type="email" name="email" placeholder="votre@email.com" required >
+                            <strong>Mot de passe</strong><input type="password" name="motDePasse" placeholder="*********">
+                                <input class="favorite styled" type="submit" name="submit" value="Connexion">
                         </fieldset>
                     </li>
-                    <li>
-                        <a href="r_covoiturage.html">
-                            <input class="favorite styled" type="button" value="Rechercher un traget">
-                        </a>
-                        <a href="p_covoiturage.html">
-                            <input class="favorite styled" type="button" value="Proposer un traget">
-                        </a>
-                    </li>
+                  
                 </ul>
             </div>
 
+            </form>
+    
             <div class="clr"></div>
         </div>
     </header> <br> <br> <br> <br><br><br><br><br>
